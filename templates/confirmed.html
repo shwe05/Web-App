@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>RECEIPT</title>
+<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: 'Poppins', sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url("{{url_for('static',filename='background2.jpg')}}");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+body img{ border-radius: 50%} 
+body, a{text-decoration: none; color:black} 
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+     <img src="{{url_for('static',filename="logo2.jpg")}}" class="w3-image w3-padding-32" width="80" height="80"> Official Receipt
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Purchase Information<div></div> </h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p> </p>
+
+
+
+    <p class="w3-large w3-center"></p>
+    ID: {{userid}}
+    <br></br>
+   Name: {{name}}
+    <br></br>
+    Email: {{email}}
+    <br></br>
+    Time of purchase: {{date}}
+    <br></br> 
+    Selected stickers: {{stickers_selected}}
+    <br></br> 
+    Total price:${{total}}.00
+    <br></br> 
+    
+    <a href={{url_for('shop')}} method='POST'>Back to Shopping</a></button>
+    
+  </div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{ 
+	font-family: 'Poppins', sans-serif;
+	background: radial-gradient(#FFFFFF,#FFE5B4);
+	margin-top : 200px;
+	margin-left: 40px;
+} 
+body a{ 
+	 text-decoration: none; 
+} 
+
+.log{ 
+	display: inline-block; 
+	background: #ff523b; 
+	color: #fff; 
+	padding: 8px 30px; 
+	margin: 30px 0; 
+	border-radius: 30px; 
+	cursor: pointer;
+	transition: background 0.2s;
+	
+} 
+
+.log:hover{ 
+	background: #563434;
+} 

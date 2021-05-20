@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+
+<head> 
+<title> Sign-Up Page </title> 
+</head> 
+
+		<link rel="stylesheet" href="/static/register.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+		
+		
+
+<body> 
+<center> 
+		<h3> Registration </h3> 
+		<form action={{url_for('register_page')}} method='POST'> 
+			<table> 
+			<tr> <!--Table row --> 
+				<td> User ID: </td> 
+				<td> 
+					<input type="text" name="UserID"> 
+					</td> 
+			</tr> 
+			
+			<tr> 
+				<td> Full Name: </td> 
+				<td> 
+				<input type="text" name="UserName"> 
+				</td> 
+			</tr> 
+			<tr> 
+				<td>Phone Number: </td> 
+				<td> 
+				<input type="text" name="PhoneNumber"> 
+				</td> 
+			</tr> 
+			<tr> 
+				<td> Email: </td> 
+				<td>
+				<input type="text" name="Email"> 
+				</td> 
+			</tr> 
+			
+			<tr> 
+				<td> Password: </td> 
+				<td> 
+				<input type="password" name="Pass" >
+				</td> 
+			</tr> 
+			<tr> 
+				<td> 
+				<input  type="submit" name="submit" value="Register"> 
+		</table> 
+
+	</form> 
+		<a href={{url_for('hello')}} method='POST'> Back </a> 
+	</center> 
+	</body> 
+	
+		
+		
+		

@@ -1,0 +1,27 @@
+body{
+
+	font-family: 'Poppins', sans-serif;
+	margin-top : 150px;
+	margin-left: 150x;
+	background: radial-gradient(#FFFFFF,#FFE5B4);
+	
+}
+body a{ 
+	 text-decoration: none; 
+} 
+.reg{ 
+	display: inline-block; 
+	background: #ff523b; 
+	color: #fff; 
+	padding: 8px 30px; 
+	margin-left: 170px;
+	border-radius: 30px; 
+	cursor: pointer;
+	transition: background 0.2s;
+
+} 
+
+.reg:hover{ 
+	background: #563434;
+
+} 

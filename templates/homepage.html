@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<title>Sticker Shop | Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+	body,h1,h5 {font-family: "Raleway", sans-serif}
+	body, html {height: 100%}
+	.bgimg {
+  background-image: url("{{url_for('static',filename='background.jpg')}}");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>STICKER SHOP <img src="{{url_for('static',filename="logo2.jpg")}}" alt="Avatar" ; width="80" height="80"></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">ABOUT</button></p>
+    <p><button onclick="" class="w3-button w3-black"><a href={{url_for('shop')}} method='POST'>SHOP</a></button></p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Singapore</p>
+    <p class="w3-large">Ships Globally</p>
+    <p class="w3-large">Welcome {{username}}!</p>
+
+    
+  </div>
+</div>
+
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Shop Information</h1>
+    </div>
+    <div class="w3-container">
+      <p> This is a small sticker shop business selling high quality vinyl stickers that are waterproof! </p>
+    </div>
+
+    <div class="w3-container w3-black">
+     <h1>Founded</h1>
+    </div>
+    <div class="w3-container">
+      <h5>March 2021</h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Owner</h1>
+	  <p>Name: Shwe Tin Aung 
+		<br> 
+		Age: 21 
+		<br> 
+		Occupation: (Student) - Currently waiting for University :) 
+		</p> 
+    </div>
+    <div class="w3-container">
+      <h5></h5><img src="{{url_for('static',filename="me.jpg")}}" width="250" height="200"></head></h5>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

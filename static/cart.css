@@ -1,0 +1,17 @@
+
+body, html {
+	height: 100%;
+}
+body{ 
+	background: radial-gradient(#FFFFFF,#FFE5B4);
+	font-family: 'Poppins', sans-serif;	
+} 
+
+
+body, html {height: 100%}
+.bgimg {
+
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}

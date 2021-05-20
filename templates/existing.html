@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+
+		<link rel="stylesheet" href="/static/existing.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+		
+
+<head> 
+<title> Login Page </title> 
+</head> 
+
+
+<body> 
+<center> 
+		<h3> Log In </h3> 
+		<form action={{url_for('login_page')}} method='POST'> 
+			<table> 
+			<tr> 
+				<td> User ID: </td> 
+				<td> 
+					<input type="text" name="UserID"> 
+					</td> 
+			</tr> 
+			
+			<tr> 
+				<td> Password: </td> 
+				<td> 
+				<input type="password" name="Pass" >
+				</td> 
+			</tr> 
+			<td> 
+				<input type="submit" name="submit" value="Login"> 
+		</table> 
+	</form> 
+	<a href={{url_for('hello')}} method='POST'> Back </a> 
+	</center> 
+	</body> 
+	

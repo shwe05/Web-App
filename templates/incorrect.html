@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+
+<head> 
+<title> Login-In Page </title> 
+</head> 
+
+<body> 
+<center> 
+		<p style="color:red">Wrong password, please try again.</p>
+		<h3> Login </h3> 
+		<form action={{url_for('login_page')}} method='POST'> 
+		<table> 
+		<tr> 
+		<td> User ID: </td> 
+				<td> 
+					<input type="text" name="UserID"> 
+					</td> 
+		</tr>
+		<tr> 
+				<td> Password: </td> 
+				<td> 
+				<input type="password" name="Pass" >
+				</td> 
+			</tr> 
+			<tr> 
+				<td> 
+				<input type="submit" name="submit" value="Login"> 
+		</table> 
+	</form> 
+	</center> 
+	</body> 
+	

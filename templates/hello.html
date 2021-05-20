@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+
+		<link rel="stylesheet" href="/static/hello.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+		
+		
+
+
+<title> Sticker Shop | Welcome! </title> 
+</head> 
+
+<center> 
+			<img src="{{url_for('static',filename="logo2.jpg")}}" width="100" height="100"> 
+</center> 
+<body> 
+<center> 
+
+<p> Already have an account? </p>
+					<p><button onclick=""><a href={{url_for('login')}} methods='POST'>Login</a></button></p> 
+					
+					
+<p>No account? Join Us! </p>
+					<p><button onclick=""><a href={{url_for('register')}} methods='POST'>Register</a></button></p> 
+					
+	</center> 
+	</body> 
+</html> 
